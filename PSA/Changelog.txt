@@ -1,0 +1,55 @@
+﻿Project Smash Attacks - Version 1.3
+https://github.com/libertyernie/brawltools
+
+  Smash Attacks: Super Smash Bros Brawl moveset editor.
+    Copyright (C) 2009  Phantom Wings
+	Copyright (C) 2014  Sammi Husky
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details at:
+  http://www.gnu.org/licenses.
+
+ ====================================
+|************ Change Log ************|
+ ====================================
+ - v1.4a- (1/1/2016)
+    . Removed data tree and hex editor.
+	. Added dropdown list of fighter objects (articles & anything with action script)
+	. Added dropdown list of Value Lists to the attribute tab (floating points, attributes, etc)
+	. Added a searchbox to the change event form.
+	. Fixed bug with description box moving offscreen when resized.
+	
+ - v1.4- (?/??/2014)
+	. Added support to view "Nodes" in the data tree.
+	. Articles are now fully supported!. (credit to Dantarion and company for tabuu source code excerpts)
+	. PSA can now open files regardless if they are being used by other programs, however in order to save it must not be in use.
+	. Data explorer now shows External references.
+	. Added support for SSE attributes.
+	. Added the rest of the currently known animation flags
+	. Added a native hex editor to PSA, specifically for editing data selected in the data tree.
+	. Data tree nodes are color coded for type.
+		- Green				= Value list.
+		- Yellow			= Event lists.
+		- Gray				= un-editable.
+
+ - v1.3a- (?/??/2014)
+	. Replaced 'Remove' button with 'Nop selected' button, as nopping is currently more efficient.
+	. Fixed random file bloating
+	. Fixed bug where after repack the saved file would still be open
+	. Fixed opening DDD. (Credit to Dantarion)
+	. Allowed parsing exit actions as well as blanks actions.
+	. Copy button also copies selected events to clipboard as text
+	. Added right click menu to attributes grid to view specific attributes as either int or float.
+	. Added "Data Explorer" to select data from the file to edit. In the future this will support articles, floating points, and "Nodes"
+	. Kirby hats are now supported*
+	. Items are now support*
+
+	*The Kirby hats and items must have "irby" present in the filenames for the program to recognize this file as a kirby hat
+	*The item files must have either "Itm", "itm", or "Item" present within the filename to recognize it as an item file.
